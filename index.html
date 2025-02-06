@@ -17,12 +17,12 @@
 
     // Fungsi untuk memuat konten berdasarkan query parameter
     function loadContent() {
-      const tool = getQueryParameter('tools');
+      const tool = getQueryParameter('subdomain-finder');
       const contentDiv = document.getElementById('content');
 
       if (tool) {
         switch (tool) {
-          case 'subdomainfinder.php':
+          case 'index.html':
             contentDiv.innerHTML = '<h1>Subdomain Finder Tool</h1><p>Isi subdomain finder di sini...</p>';
             break;
           case 'geolocation.php':
